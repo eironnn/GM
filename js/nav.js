@@ -3,8 +3,8 @@
    Renders into <div id="topnav"></div>, reads ?id=&role= from the URL
    ========================================================== */
 
-function renderNav(activePage, studentName){
-  const { role, id } = currentSession();
+function renderNav(activePage){
+  const { role, id, student } = currentSession();
   const qs = id ? `?id=${id}&role=${role}` : `?role=${role}`;
 
   const studentLinks = `
@@ -18,8 +18,8 @@ function renderNav(activePage, studentName){
 
   const whoLabel = role === 'admin'
     ? 'Registrar Admin'
-    : (studentName || 'Loading…');
-  const whoBadge = role === 'admin' ? 'A' : (studentName ? initials(studentName) : '?');
+    : (student ? student.name : 'Guest');
+  const whoBadge = role === 'admin' ? 'A' : (student ? initials(student.name) : '?');
 
   const nav = document.getElementById('topnav');
   if(!nav) return;
