@@ -14,7 +14,9 @@ const STUDENTS = {
   "2023-0212": { name:"Ricardo Bautista", grade:9, section:"Rizal",
     subjects:{ Filipino:79, English:76, Math:81, Science:77, "Araling Panlipunan":75, MAPEH:82, TLE:80, "Values Education":78 } },
   "2023-0267": { name:"Angelica Reyes", grade:9, section:"Rizal",
-    subjects:{ Filipino:92, English:94, Math:89, Science:91, "Araling Panlipunan":90, MAPEH:93, TLE:95, "Values Education":92 } }
+    subjects:{ Filipino:92, English:94, Math:89, Science:91, "Araling Panlipunan":90, MAPEH:93, TLE:95, "Values Education":92 } },
+   "2022-2023": { name:"Lester Aaron A. Tomboc", grade:10, section:"Silver",
+    subjects:{ Filipino:99, English:99, Math:99, Science:99, "Araling Panlipunan":99, MAPEH:99, TLE:99, "Values Education":99 } }
 };
 
 const FAQS = [
